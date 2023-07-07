@@ -1,0 +1,4 @@
+- Cliente dever ter nome, idade, email
+- Cliente não pode ser menor de idade
+- O Email cadastrado deve ser valido
+- O nome do CLiente deve ter no minimo 3 caracteres
