@@ -21,3 +21,10 @@ def test_email_valido():
     cadastro_cliente = CadastroCliente()
     resposta = cadastro_cliente.cadastrar_cliente(cliente)
     assert "Email invalido" == resposta
+    
+
+def test_nome_valido():
+    cliente = Cliente("Fl", 21, "flavio@gmail.com")
+    cadastro_cliente = CadastroCliente()
+    resposta = cadastro_cliente.cadastrar_cliente(cliente)
+    assert "Nome invalido" == resposta

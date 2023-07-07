@@ -9,6 +9,9 @@ class CadastroCliente:
         if "@" not in cliente.email:
             return "Email invalido"
         
+        if len(cliente.nome) < 3:
+            return "Nome invalido"
+        
         self.clientes_cadastrados.append(cliente)
         
         if len(self.clientes_cadastrados) > 0:
